@@ -1,245 +1,334 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Mail, Phone, MapPin, Menu, X } from 'lucide-react';
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/subham-new-photo-137x183.jpg" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=LPiOR1"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=LPiOR1" type="text/css">
 
-const DesktopNav = () => (
-  <div className="hidden lg:flex justify-between items-center h-16 max-w-6xl mx-auto px-4">
-    <div className="flex items-center">
-      <img
-        src="/api/placeholder/40/40"
-        alt="SP Logo"
-        className="h-10 w-10 rounded-full mr-3"
-      />
-      <span className="font-bold text-xl">Subham Patel</span>
-    </div>
-    <div className="flex space-x-8">
-      <a href="#home" className="hover:text-blue-600 transition-colors">Home</a>
-      <a href="#research" className="hover:text-blue-600 transition-colors">Research Interest</a>
-      <a href="#education" className="hover:text-blue-600 transition-colors">Education</a>
-      <a href="#cv" className="hover:text-blue-600 transition-colors">Curriculum Vitae</a>
-      <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
-    </div>
-  </div>
-);
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu5 cid-uunQBDJc2E" once="menu" id="menu05-n">
+	
 
-const MobileNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="index.html">
+						<img src="assets/images/subham-new-photo-137x183.jpg" alt="SP" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4" href="index.html">Subham Patel</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="https://subham2899.github.io/home"><span class="mobi-mbri mobi-mbri-home mbr-iconfont mbr-iconfont-btn"></span>Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="research.html" aria-expanded="false">Research Interest</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="education.html">Education</a>
+					</li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://cds.iisc.ac.in/faculty/ratikanta/Subham_CV.pdf" target="_blank">Curriculum Vitae</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="contact.html">Contact</a></li></ul>
+				
+			</div>
+		</div>
+	</nav>
+</section>
 
-  return (
-    <div className="lg:hidden">
-      <div className="flex justify-between items-center h-16 px-4">
-        <div className="flex items-center">
-          <img
-            src="/api/placeholder/40/40"
-            alt="SP Logo"
-            className="h-10 w-10 rounded-full mr-3"
-          />
-          <span className="font-bold text-xl">Subham Patel</span>
-        </div>
-        <button 
-          onClick={() => setIsOpen(!isOpen)}
-          className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
+<section data-bs-version="5.1" class="header16 cid-uqqBJGFXFA mbr-fullscreen mbr-parallax-background" id="header1">
+  
 
-      {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-50 border-t"
-             style={{
-               backgroundImage: `url('/api/placeholder/400/400')`,
-               backgroundSize: 'cover'
-             }}>
-          <div className="p-4 space-y-4">
-            <a href="#home" className="block p-2 hover:bg-white/50 rounded-lg transition-colors">Home</a>
-            <a href="#research" className="block p-2 hover:bg-white/50 rounded-lg transition-colors">Research Interest</a>
-            <a href="#education" className="block p-2 hover:bg-white/50 rounded-lg transition-colors">Education</a>
-            <a href="#cv" className="block p-2 hover:bg-white/50 rounded-lg transition-colors">Curriculum Vitae</a>
-            <a href="#contact" className="block p-2 hover:bg-white/50 rounded-lg transition-colors">Contact</a>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
-
-const Card = ({ children, className = "" }) => (
-  <div 
-    className={`rounded-lg shadow-lg ${className}`}
-    style={{
-      backgroundImage: `url('/api/placeholder/400/400')`,
-      backgroundSize: 'cover',
-      backdropFilter: 'blur(8px)'
-    }}
-  >
-    <div className="backdrop-blur-sm bg-white/30 rounded-lg h-full">
-      {children}
-    </div>
-  </div>
-);
-
-const EducationCard = ({ title, institution, logo }) => (
-  <Card className="hover:shadow-xl transition-shadow">
-    <div className="p-6">
-      <div className="flex flex-col sm:flex-row items-center gap-6">
-        <div className="flex items-center gap-4 w-full sm:w-auto">
-          <img
-            src={logo}
-            alt={`${title} logo`}
-            className="w-16 h-16 object-contain"
-            style={{
-              backgroundImage: `url('/api/placeholder/400/400')`,
-              backgroundSize: 'cover',
-              padding: '4px',
-              borderRadius: '8px'
-            }}
-          />
-          <div className="text-left">
-            <h3 className="text-xl font-semibold">{title}</h3>
-            <p className="text-gray-700">{institution}</p>
-          </div>
-        </div>
+  
+  
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row text-center">
+      <div class="content-wrap col-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <!-- Welcome text -->
+          <span class="drop-animation">W</span><span class="drop-animation">e</span><span class="drop-animation">l</span><span class="drop-animation">c</span><span class="drop-animation">o</span><span class="drop-animation">m</span><span class="drop-animation">e</span>
+          <span>&nbsp;</span>
+          <span class="drop-animation">t</span><span class="drop-animation">o</span>
+          <span>&nbsp;</span>
+          <span class="drop-animation">m</span><span class="drop-animation">y</span>
+          <span>&nbsp;</span>
+          <span class="drop-animation">H</span><span class="drop-animation">o</span><span class="drop-animation">m</span><span class="drop-animation">e</span><span class="drop-animation">p</span><span class="drop-animation">a</span><span class="drop-animation">g</span><span class="drop-animation">e</span>
+        </h1>
+        
       </div>
     </div>
-  </Card>
-);
+  </div>
+</section>
 
-const App = () => {
-  return (
-    <div className="min-h-screen" style={{
-      backgroundImage: `url('/api/placeholder/400/400')`,
-      backgroundSize: 'cover',
-      backgroundAttachment: 'fixed'
-    }}>
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
-        <DesktopNav />
-        <MobileNav />
-      </nav>
-      
-      <main className="max-w-6xl mx-auto px-4 py-8">
-        {/* Profile Section */}
-        <section id="home" className="mb-16">
-          <Card className="p-8">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              <img
-                src="/api/placeholder/150/150"
-                alt="Profile"
-                className="w-40 h-40 rounded-full shadow-md"
-                style={{
-                  backgroundImage: `url('/api/placeholder/400/400')`,
-                  backgroundSize: 'cover',
-                  padding: '4px'
-                }}
-              />
-              <div className="text-center md:text-left">
-                <h1 className="text-4xl font-bold mb-4">Hi, I'm Subham Patel</h1>
-                <p className="text-xl">
-                  Ph.D. Scholar, IISc Mathematics Initiative<br />
-                  Department of Mathematics<br />
-                  Indian Institute of Science Bangalore<br />
-                  Bengaluru, 560012
-                </p>
-              </div>
-            </div>
-          </Card>
-        </section>
+<section data-bs-version="5.1" class="start article2 cid-uqqBP3xsMy mbr-parallax-background" id="Subham_patel">
+	
 
-        {/* Research Interests */}
-        <section id="research" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Research Interest</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {['Machine Learning', 'Deep Learning', 'Wavelet Method for Scientific Computing'].map((interest) => (
-              <Card key={interest} className="hover:shadow-xl transition-shadow">
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold">{interest}</h3>
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-4 image-wrapper">
+				<img class="w-100" src="assets/images/subham-photo-500x667.jpeg" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"><strong>Hi I'm Subham Patel</strong></h1>
+					<p class="mbr-text align-left mbr-fonts-style mb-4 display-5"><strong>Ph.D. Scholar
+<br>IISc Mathematics Initiative</strong><br><strong>Department of Mathematics<br>Indian Institute of Science Bangalore
+<br>Bengaluru, 560012</strong></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="slider05 cid-utmvDYIo6I" id="slider05-j">
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="carousel slide" id="uuoaIDzehu" data-interval="5000" data-bs-interval="5000">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#uuoaIDzehu" data-bs-target="#uuoaIDzehu"></li>
+                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#uuoaIDzehu" data-bs-target="#uuoaIDzehu"></li>
+                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#uuoaIDzehu" data-bs-target="#uuoaIDzehu"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item slider-image item active">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/whatsapp-image-2023-08-21-at-19.56.18-6-1600x1200.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item slider-image item">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/hsc-0159-copy-1-1800x1200.jpg" alt="" data-slide-to="1" data-bs-slide-to="1">
+                            </div>
+                        </div><div class="carousel-item slider-image item">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/whatsapp-image-2023-08-21-at-19.56.17-4-1600x1200.jpg" alt="" data-slide-to="2" data-bs-slide-to="2">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#uuoaIDzehu">
+                        <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#uuoaIDzehu">
+                        <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Next</span>
+                    </a>
                 </div>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Education */}
-        <section id="education" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Education</h2>
-          <div className="space-y-6">
-            {[
-              {
-                title: "Currently, Ph.D. Scholar",
-                institution: "IISc Mathematics Initiative Department of Mathematics Indian Institute of Science Bangalore",
-                logo: "/api/placeholder/64/64"
-              },
-              {
-                title: "Integrated M.Sc in Mathematics",
-                institution: "Department of Mathematics National Institute of Technology Rourkela",
-                logo: "/api/placeholder/64/64"
-              },
-              {
-                title: "Minor Degree in Electrical Engineering",
-                institution: "Department of Electrical Engineering National Institute of Technology Rourkela",
-                logo: "/api/placeholder/64/64"
-              },
-              {
-                title: "Senior Secondary Education in Science",
-                institution: "DAV Public School Jharsuguda",
-                logo: "/api/placeholder/64/64"
-              }
-            ].map((edu, index) => (
-              <EducationCard key={index} {...edu} />
-            ))}
-          </div>
-        </section>
-
-        {/* Contact */}
-        <section id="contact" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Get in touch</h2>
-          <Card>
-            <div className="p-6 space-y-4">
-              <div className="flex items-center">
-                <Phone className="w-6 h-6 mr-3 text-blue-600" />
-                <span>+91 8280813033</span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="w-6 h-6 mr-3 text-blue-600" />
-                <a href="mailto:subhampatel@iisc.ac.in" className="text-blue-600 hover:underline">
-                  subhampatel@iisc.ac.in
-                </a>
-              </div>
-              <div className="flex items-start">
-                <MapPin className="w-6 h-6 mr-3 text-blue-600 flex-shrink-0" />
-                <p>
-                  Room No-CDS 226,<br />
-                  Department of Computational and Data Sciences<br />
-                  Indian Institute of Science, Bangalore<br />
-                  Bengaluru, Karnataka, 560012
-                </p>
-              </div>
             </div>
-          </Card>
-
-          {/* Map */}
-          <div className="mt-8">
-            <Card>
-              <div className="p-4">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7246409297247!2d77.56498131482266!3d13.0191906907913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17d757000001%3A0x349e80b8f0e57306!2sIndian%20Institute%20of%20Science!5e0!3m2!1sen!2sin!4v1647960512345!5m2!1sen!2sin"
-                  className="w-full h-96 rounded-lg"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </Card>
-          </div>
-        </section>
-      </main>
-
-      <footer className="py-8 bg-white/80 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Subham Patel. All rights reserved.</p>
         </div>
-      </footer>
     </div>
-  );
-};
+</section>
 
-export default App;
+<section data-bs-version="5.1" class="features6 start cid-uqqBRZ4CuJ mbr-parallax-background" id="research_area-explain">
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mbr-section-head mb-5">
+					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Research Interest</strong></h4>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			
+			
+			<div class="item features-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="assets/images/what-is-machine-learning-definition-types-1024x515.jpg-1.webp" alt="" data-slide-to="0" data-bs-slide-to="0">
+					</div>
+					<div class="item-content">
+						
+						
+						<div class="mbr-section-btn item-footer"><a href="page1.html#features06-2m" class="btn btn-primary item-btn display-7">Machine Learning</a></div>
+					</div>
+				</div>
+			</div><div class="item features-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="assets/images/1-gofgcuhprcroxslzvrojpg-816x544.jpg" alt="" data-slide-to="1" data-bs-slide-to="1">
+					</div>
+					<div class="item-content">
+						
+						
+						<div class="mbr-section-btn item-footer"><a href="page1.html#features06-2m" class="btn btn-primary item-btn display-7">Deep Learning</a></div>
+					</div>
+				</div>
+			</div><div class="item features-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="assets/images/maxresdefault-816x459.jpeg" alt="" data-slide-to="2" data-bs-slide-to="2">
+					</div>
+					<div class="item-content">
+						
+						
+						<div class="mbr-section-btn item-footer"><a href="page1.html#features06-2m" class="btn btn-primary item-btn display-7">Wavelet Method for Scientific Computing<br></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="Education cid-utmnbw5wXM mbr-parallax-background" id="Education">
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mbr-section-head mb-5">
+					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Education</strong></h4>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			
+			
+			
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="features38 cid-uqqBTbSyX0 mbr-parallax-background" id="Education_detail">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row row-reverse justify-content-center">
+
+            <div class="col-12 col-md-12 col-lg">
+                <div class="text-wrapper align-left">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>Currently, Ph. D. Scholar</strong><strong><br></strong></h1>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-5"><a href="https://imi.iisc.ac.in/" class="text-danger" target="_blank">IISc Mathematics Initiative</a><br><a href="https://math.iisc.ac.in/" class="text-danger">Department of Mathematics</a><br><a href="https://iisc.ac.in/" class="text-danger" target="_blank">Indian Institute of Science Bangalore</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-2 image-wrapper">
+                <img class="w-100" src="assets/images/iisc-master-seal-transparent-1-376x266.png" alt="NIT Rourkela">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg">
+                <div class="text-wrapper align-left">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>Integrated M.Sc in Mathematics</strong></h1>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-5"><a href="https://nitrkl.ac.in/MA" class="text-danger" target="_blank">Department of Mathematics</a><br><a href="https://nitrkl.ac.in/" class="text-danger" target="_blank">National Institute of Technology Rourkela</a><br></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-2 image-wrapper">
+                <img class="w-100" src="assets/images/nit-rourkela-colour-logo-1.svg" alt="NIT Rourkela">
+            </div>
+        </div>
+        <div class="row row-reverse justify-content-center">
+
+            <div class="col-12 col-md-12 col-lg">
+                <div class="text-wrapper align-left">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>Minor Degree in Electrical Engineering</strong></h1>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-5"><a href="https://nitrkl.ac.in/EE" class="text-danger" target="_blank">Department of Electrical Engineering</a><br><a href="https://nitrkl.ac.in/" class="text-danger" target="_blank">National Institute of Technology Rourkela</a><br></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-2 image-wrapper">
+                <img class="w-100" src="assets/images/nit-rourkela-colour-logo-1.svg" alt="NIT Rourkela">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg">
+                <div class="text-wrapper align-left">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>Senior Secondary Education in Science</strong></h1>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-5"><a href="https://davjharsuguda.org/" class="text-danger" target="_blank">DAV Public School Jharsuguda</a><br></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-2 image-wrapper">
+                <img class="w-100" src="assets/images/dav-cmc-logo-3.svg" alt="DAV">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer6 cid-uqqBTA6vZU" once="footers" id="contacts02-tLdYHD757A-9">
+
+    
+
+    
+    <div class="container">
+        <div class="mbr-section-head mb-5">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Contacts</strong>
+            </h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="card col-12 col-md-5">
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+                        <h5 class="cardTitle mbr-fonts-style mb-2 display-5">
+                        <strong>Get in touch</strong></h5>
+                    <ul class="list mbr-fonts-style display-7">
+                        <li class="mbr-text item-wrap"><span style="font-size: 1.4rem;">Phone:<a href="tel:+91 8280813033" class="text-primary"> </a></span><a href="tel:+91 8280813033" class="text-danger" style="font-size: 1.4rem;">+91 8280813033</a></li>
+                        <li class="mbr-text item-wrap">Email: <a href="mailto:subhampatel@iisc.ac.in" class="text-danger">subhampatel@iisc.ac.in</a></li><li class="mbr-text item-wrap"><br></li>
+                        <li class="mbr-text item-wrap">Address: </li><li class="mbr-text item-wrap">Room No-CDS 226,</li><li class="mbr-text item-wrap">Department of Computational and Data Sciences</li><li class="mbr-text item-wrap">Indian Institute of Science, Bangalore</li><li class="mbr-text item-wrap">Bengaluru, Karnataka, 560012</li><li class="mbr-text item-wrap"><br></li>
+                    </ul>
+                    <a href="https://mapmyvisitors.com/web/1bwgg" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?cl=ffffff&w=200&t=n&d=M40Bh8lFtGzjPdFuo8Dk5r8SGZtBsD5HddOTRAtikBc"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper col-12 col-md-7">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtXm0x23nRCgazjDV2Kl3GTHRP411ougQ&amp;q=Department of Computational and Data SciencesIndian Institute of Science, Bangalore" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
